@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+    <style>
+        *{
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .container{
+            max-width: 128rem;
+            /* border: 1px solid red; */
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding: 0 0rem
+        }
+        img{
+            width: 100rem;
+        }
+
+        @media(width < 36rem){
+            img{
+                width: 30rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="main.jpg" alt="" onload="myFunction()">
+    </div>
+
+    <!-- js -->
+    <script>
+        function myFunction(){
+           setTimeout(nextPage,1000);
+        }
+        function nextPage(){
+            window.location = "button.html";
+        }
+    </script>
+</body>
+</html>
